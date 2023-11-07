@@ -48,7 +48,7 @@ struct MealDetailModel: Decodable {
         var result = meals.first
 
         // some special treatment for decoding ingredients / measures, since the number
-        // of items its unknown
+        // of items is unknown
         guard
             let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
             let root = (json["meals"] as? [Any])?.first,
