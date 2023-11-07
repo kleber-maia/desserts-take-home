@@ -35,8 +35,8 @@ Some UI / UX system features supported:
 ### Unit Testing
 In addition to the features above, these were the high value areas I chose to put under test:
 
-1. MealService, MealDetailService: covers fetching data from the remote API (happy path and possible failure);
-2. MealModel, MealDetailModel: covers decoding from JSON (happy path and possible failure).
+1. `MealServiceTests`, `MealDetailServiceTests`: covering fetching data from the remote API (happy path and possible failure);
+2. `MealModelTests`, `MealDetailModelTests`: covering decoding from JSON (happy path and possible failure).
 
 ### The trade-offs
 These were the limitations imposed due to time constraints:
