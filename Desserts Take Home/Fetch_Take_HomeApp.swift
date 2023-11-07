@@ -1,6 +1,6 @@
 //
-//  Fetch_Take_HomeApp.swift
-//  Fetch Take Home
+//  Desserts_Take_HomeApp.swift
+//  Desserts Take Home
 //
 //  Created by Kleber Maia on 11/6/23.
 //
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct Fetch_Take_HomeApp: App {
+struct Desserts_Take_HomeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }

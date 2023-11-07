@@ -4,10 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Fetch Take Home.xcscheme_^#shared#^_</key>
+		<key>Desserts Take Home.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>99A9CD452AF9797200B725A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>99A9CD552AF9797300B725A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

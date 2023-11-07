@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		992E1C152AFA780E009377BB /* MealListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E1C142AFA780E009377BB /* MealListItemView.swift */; };
+		992E1C172AFA86D7009377BB /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E1C162AFA86D7009377BB /* MealDetailView.swift */; };
+		992E1C192AFA9FB6009377BB /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E1C182AFA9FB6009377BB /* MealDetailViewModel.swift */; };
 		99A9CD4A2AF9797200B725A5 /* Fetch_Take_HomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD492AF9797200B725A5 /* Fetch_Take_HomeApp.swift */; };
-		99A9CD4C2AF9797200B725A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD4B2AF9797200B725A5 /* ContentView.swift */; };
+		99A9CD4C2AF9797200B725A5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD4B2AF9797200B725A5 /* RootView.swift */; };
 		99A9CD4E2AF9797300B725A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A9CD4D2AF9797300B725A5 /* Assets.xcassets */; };
 		99A9CD512AF9797300B725A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A9CD502AF9797300B725A5 /* Preview Assets.xcassets */; };
-		99A9CD5B2AF9797300B725A5 /* Fetch_Take_HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD5A2AF9797300B725A5 /* Fetch_Take_HomeTests.swift */; };
-		99A9CD652AF9797300B725A5 /* Fetch_Take_HomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD642AF9797300B725A5 /* Fetch_Take_HomeUITests.swift */; };
-		99A9CD672AF9797300B725A5 /* Fetch_Take_HomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD662AF9797300B725A5 /* Fetch_Take_HomeUITestsLaunchTests.swift */; };
+		99A9CD5B2AF9797300B725A5 /* MealModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD5A2AF9797300B725A5 /* MealModelTests.swift */; };
+		99A9CD752AF979B700B725A5 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD742AF979B700B725A5 /* MealModel.swift */; };
+		99A9CD782AF97E4D00B725A5 /* desserts.json in Resources */ = {isa = PBXBuildFile; fileRef = 99A9CD772AF97E4D00B725A5 /* desserts.json */; };
+		99A9CD7A2AF9873500B725A5 /* MealDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD792AF9873500B725A5 /* MealDetailModel.swift */; };
+		99A9CD7C2AF989B400B725A5 /* creme_brulee.json in Resources */ = {isa = PBXBuildFile; fileRef = 99A9CD7B2AF989B400B725A5 /* creme_brulee.json */; };
+		99A9CD7E2AF989D000B725A5 /* MealDetailModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD7D2AF989D000B725A5 /* MealDetailModelTests.swift */; };
+		99A9CD812AF98E1F00B725A5 /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD802AF98E1F00B725A5 /* MealService.swift */; };
+		99A9CD832AF9950200B725A5 /* MealServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD822AF9950200B725A5 /* MealServiceTests.swift */; };
+		99A9CD852AF9A0CB00B725A5 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD842AF9A0CB00B725A5 /* URLSessionProtocol.swift */; };
+		99A9CD872AF9A14700B725A5 /* MealDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD862AF9A14700B725A5 /* MealDetailService.swift */; };
+		99A9CD892AF9A18300B725A5 /* MealDetailServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD882AF9A18300B725A5 /* MealDetailServiceTests.swift */; };
+		99A9CD8B2AF9A4FB00B725A5 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD8A2AF9A4FA00B725A5 /* Errors.swift */; };
+		99A9CD8E2AF9CAA500B725A5 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD8D2AF9CAA500B725A5 /* MealListView.swift */; };
+		99A9CD902AF9CAB700B725A5 /* MealListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9CD8F2AF9CAB700B725A5 /* MealListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,26 +38,32 @@
 			remoteGlobalIDString = 99A9CD452AF9797200B725A5;
 			remoteInfo = "Fetch Take Home";
 		};
-		99A9CD612AF9797300B725A5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 99A9CD3E2AF9797200B725A5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 99A9CD452AF9797200B725A5;
-			remoteInfo = "Fetch Take Home";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		99A9CD462AF9797200B725A5 /* Fetch Take Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fetch Take Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		992E1C142AFA780E009377BB /* MealListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealListItemView.swift; sourceTree = "<group>"; };
+		992E1C162AFA86D7009377BB /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		992E1C182AFA9FB6009377BB /* MealDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
+		99A9CD462AF9797200B725A5 /* Desserts Take Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desserts Take Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A9CD492AF9797200B725A5 /* Fetch_Take_HomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch_Take_HomeApp.swift; sourceTree = "<group>"; };
-		99A9CD4B2AF9797200B725A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		99A9CD4B2AF9797200B725A5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		99A9CD4D2AF9797300B725A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99A9CD502AF9797300B725A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		99A9CD562AF9797300B725A5 /* Fetch Take HomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fetch Take HomeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99A9CD5A2AF9797300B725A5 /* Fetch_Take_HomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch_Take_HomeTests.swift; sourceTree = "<group>"; };
-		99A9CD602AF9797300B725A5 /* Fetch Take HomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fetch Take HomeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99A9CD642AF9797300B725A5 /* Fetch_Take_HomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch_Take_HomeUITests.swift; sourceTree = "<group>"; };
-		99A9CD662AF9797300B725A5 /* Fetch_Take_HomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch_Take_HomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		99A9CD562AF9797300B725A5 /* Desserts Take HomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desserts Take HomeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A9CD5A2AF9797300B725A5 /* MealModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModelTests.swift; sourceTree = "<group>"; };
+		99A9CD742AF979B700B725A5 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
+		99A9CD772AF97E4D00B725A5 /* desserts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = desserts.json; sourceTree = "<group>"; };
+		99A9CD792AF9873500B725A5 /* MealDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailModel.swift; sourceTree = "<group>"; };
+		99A9CD7B2AF989B400B725A5 /* creme_brulee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = creme_brulee.json; sourceTree = "<group>"; };
+		99A9CD7D2AF989D000B725A5 /* MealDetailModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailModelTests.swift; sourceTree = "<group>"; };
+		99A9CD802AF98E1F00B725A5 /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
+		99A9CD822AF9950200B725A5 /* MealServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealServiceTests.swift; sourceTree = "<group>"; };
+		99A9CD842AF9A0CB00B725A5 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		99A9CD862AF9A14700B725A5 /* MealDetailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailService.swift; sourceTree = "<group>"; };
+		99A9CD882AF9A18300B725A5 /* MealDetailServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailServiceTests.swift; sourceTree = "<group>"; };
+		99A9CD8A2AF9A4FA00B725A5 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		99A9CD8D2AF9CAA500B725A5 /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
+		99A9CD8F2AF9CAB700B725A5 /* MealListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,22 +81,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99A9CD5D2AF9797300B725A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		99A9CD3D2AF9797200B725A5 = {
 			isa = PBXGroup;
 			children = (
-				99A9CD482AF9797200B725A5 /* Fetch Take Home */,
-				99A9CD592AF9797300B725A5 /* Fetch Take HomeTests */,
-				99A9CD632AF9797300B725A5 /* Fetch Take HomeUITests */,
+				99A9CD482AF9797200B725A5 /* Desserts Take Home */,
+				99A9CD592AF9797300B725A5 /* Desserts Take HomeTests */,
 				99A9CD472AF9797200B725A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,22 +96,24 @@
 		99A9CD472AF9797200B725A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				99A9CD462AF9797200B725A5 /* Fetch Take Home.app */,
-				99A9CD562AF9797300B725A5 /* Fetch Take HomeTests.xctest */,
-				99A9CD602AF9797300B725A5 /* Fetch Take HomeUITests.xctest */,
+				99A9CD462AF9797200B725A5 /* Desserts Take Home.app */,
+				99A9CD562AF9797300B725A5 /* Desserts Take HomeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		99A9CD482AF9797200B725A5 /* Fetch Take Home */ = {
+		99A9CD482AF9797200B725A5 /* Desserts Take Home */ = {
 			isa = PBXGroup;
 			children = (
+				99A9CD732AF9798D00B725A5 /* Models */,
+				99A9CD7F2AF98D4B00B725A5 /* Services */,
+				99A9CD8C2AF9CA4C00B725A5 /* Views */,
 				99A9CD492AF9797200B725A5 /* Fetch_Take_HomeApp.swift */,
-				99A9CD4B2AF9797200B725A5 /* ContentView.swift */,
+				99A9CD4B2AF9797200B725A5 /* RootView.swift */,
 				99A9CD4D2AF9797300B725A5 /* Assets.xcassets */,
 				99A9CD4F2AF9797300B725A5 /* Preview Content */,
 			);
-			path = "Fetch Take Home";
+			path = "Desserts Take Home";
 			sourceTree = "<group>";
 		};
 		99A9CD4F2AF9797300B725A5 /* Preview Content */ = {
@@ -110,29 +124,65 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		99A9CD592AF9797300B725A5 /* Fetch Take HomeTests */ = {
+		99A9CD592AF9797300B725A5 /* Desserts Take HomeTests */ = {
 			isa = PBXGroup;
 			children = (
-				99A9CD5A2AF9797300B725A5 /* Fetch_Take_HomeTests.swift */,
+				99A9CD762AF97E3E00B725A5 /* Fixtures */,
+				99A9CD5A2AF9797300B725A5 /* MealModelTests.swift */,
+				99A9CD7D2AF989D000B725A5 /* MealDetailModelTests.swift */,
+				99A9CD822AF9950200B725A5 /* MealServiceTests.swift */,
+				99A9CD882AF9A18300B725A5 /* MealDetailServiceTests.swift */,
 			);
-			path = "Fetch Take HomeTests";
+			path = "Desserts Take HomeTests";
 			sourceTree = "<group>";
 		};
-		99A9CD632AF9797300B725A5 /* Fetch Take HomeUITests */ = {
+		99A9CD732AF9798D00B725A5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				99A9CD642AF9797300B725A5 /* Fetch_Take_HomeUITests.swift */,
-				99A9CD662AF9797300B725A5 /* Fetch_Take_HomeUITestsLaunchTests.swift */,
+				99A9CD742AF979B700B725A5 /* MealModel.swift */,
+				99A9CD792AF9873500B725A5 /* MealDetailModel.swift */,
 			);
-			path = "Fetch Take HomeUITests";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99A9CD762AF97E3E00B725A5 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				99A9CD7B2AF989B400B725A5 /* creme_brulee.json */,
+				99A9CD772AF97E4D00B725A5 /* desserts.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		99A9CD7F2AF98D4B00B725A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				99A9CD802AF98E1F00B725A5 /* MealService.swift */,
+				99A9CD862AF9A14700B725A5 /* MealDetailService.swift */,
+				99A9CD842AF9A0CB00B725A5 /* URLSessionProtocol.swift */,
+				99A9CD8A2AF9A4FA00B725A5 /* Errors.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		99A9CD8C2AF9CA4C00B725A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				992E1C162AFA86D7009377BB /* MealDetailView.swift */,
+				992E1C182AFA9FB6009377BB /* MealDetailViewModel.swift */,
+				992E1C142AFA780E009377BB /* MealListItemView.swift */,
+				99A9CD8D2AF9CAA500B725A5 /* MealListView.swift */,
+				99A9CD8F2AF9CAB700B725A5 /* MealListViewModel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		99A9CD452AF9797200B725A5 /* Fetch Take Home */ = {
+		99A9CD452AF9797200B725A5 /* Desserts Take Home */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99A9CD6A2AF9797300B725A5 /* Build configuration list for PBXNativeTarget "Fetch Take Home" */;
+			buildConfigurationList = 99A9CD6A2AF9797300B725A5 /* Build configuration list for PBXNativeTarget "Desserts Take Home" */;
 			buildPhases = (
 				99A9CD422AF9797200B725A5 /* Sources */,
 				99A9CD432AF9797200B725A5 /* Frameworks */,
@@ -142,14 +192,14 @@
 			);
 			dependencies = (
 			);
-			name = "Fetch Take Home";
+			name = "Desserts Take Home";
 			productName = "Fetch Take Home";
-			productReference = 99A9CD462AF9797200B725A5 /* Fetch Take Home.app */;
+			productReference = 99A9CD462AF9797200B725A5 /* Desserts Take Home.app */;
 			productType = "com.apple.product-type.application";
 		};
-		99A9CD552AF9797300B725A5 /* Fetch Take HomeTests */ = {
+		99A9CD552AF9797300B725A5 /* Desserts Take HomeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99A9CD6D2AF9797300B725A5 /* Build configuration list for PBXNativeTarget "Fetch Take HomeTests" */;
+			buildConfigurationList = 99A9CD6D2AF9797300B725A5 /* Build configuration list for PBXNativeTarget "Desserts Take HomeTests" */;
 			buildPhases = (
 				99A9CD522AF9797300B725A5 /* Sources */,
 				99A9CD532AF9797300B725A5 /* Frameworks */,
@@ -160,28 +210,10 @@
 			dependencies = (
 				99A9CD582AF9797300B725A5 /* PBXTargetDependency */,
 			);
-			name = "Fetch Take HomeTests";
+			name = "Desserts Take HomeTests";
 			productName = "Fetch Take HomeTests";
-			productReference = 99A9CD562AF9797300B725A5 /* Fetch Take HomeTests.xctest */;
+			productReference = 99A9CD562AF9797300B725A5 /* Desserts Take HomeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		99A9CD5F2AF9797300B725A5 /* Fetch Take HomeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99A9CD702AF9797300B725A5 /* Build configuration list for PBXNativeTarget "Fetch Take HomeUITests" */;
-			buildPhases = (
-				99A9CD5C2AF9797300B725A5 /* Sources */,
-				99A9CD5D2AF9797300B725A5 /* Frameworks */,
-				99A9CD5E2AF9797300B725A5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				99A9CD622AF9797300B725A5 /* PBXTargetDependency */,
-			);
-			name = "Fetch Take HomeUITests";
-			productName = "Fetch Take HomeUITests";
-			productReference = 99A9CD602AF9797300B725A5 /* Fetch Take HomeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,13 +232,9 @@
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 99A9CD452AF9797200B725A5;
 					};
-					99A9CD5F2AF9797300B725A5 = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 99A9CD452AF9797200B725A5;
-					};
 				};
 			};
-			buildConfigurationList = 99A9CD412AF9797200B725A5 /* Build configuration list for PBXProject "Fetch Take Home" */;
+			buildConfigurationList = 99A9CD412AF9797200B725A5 /* Build configuration list for PBXProject "Desserts Take Home" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +247,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				99A9CD452AF9797200B725A5 /* Fetch Take Home */,
-				99A9CD552AF9797300B725A5 /* Fetch Take HomeTests */,
-				99A9CD5F2AF9797300B725A5 /* Fetch Take HomeUITests */,
+				99A9CD452AF9797200B725A5 /* Desserts Take Home */,
+				99A9CD552AF9797300B725A5 /* Desserts Take HomeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,13 +267,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99A9CD5E2AF9797300B725A5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				99A9CD7C2AF989B400B725A5 /* creme_brulee.json in Resources */,
+				99A9CD782AF97E4D00B725A5 /* desserts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +279,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99A9CD4C2AF9797200B725A5 /* ContentView.swift in Sources */,
+				992E1C172AFA86D7009377BB /* MealDetailView.swift in Sources */,
+				99A9CD4C2AF9797200B725A5 /* RootView.swift in Sources */,
+				992E1C192AFA9FB6009377BB /* MealDetailViewModel.swift in Sources */,
+				99A9CD8E2AF9CAA500B725A5 /* MealListView.swift in Sources */,
+				99A9CD852AF9A0CB00B725A5 /* URLSessionProtocol.swift in Sources */,
+				99A9CD902AF9CAB700B725A5 /* MealListViewModel.swift in Sources */,
+				99A9CD752AF979B700B725A5 /* MealModel.swift in Sources */,
 				99A9CD4A2AF9797200B725A5 /* Fetch_Take_HomeApp.swift in Sources */,
+				99A9CD8B2AF9A4FB00B725A5 /* Errors.swift in Sources */,
+				99A9CD812AF98E1F00B725A5 /* MealService.swift in Sources */,
+				99A9CD7A2AF9873500B725A5 /* MealDetailModel.swift in Sources */,
+				992E1C152AFA780E009377BB /* MealListItemView.swift in Sources */,
+				99A9CD872AF9A14700B725A5 /* MealDetailService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99A9CD5B2AF9797300B725A5 /* Fetch_Take_HomeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99A9CD5C2AF9797300B725A5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99A9CD652AF9797300B725A5 /* Fetch_Take_HomeUITests.swift in Sources */,
-				99A9CD672AF9797300B725A5 /* Fetch_Take_HomeUITestsLaunchTests.swift in Sources */,
+				99A9CD5B2AF9797300B725A5 /* MealModelTests.swift in Sources */,
+				99A9CD892AF9A18300B725A5 /* MealDetailServiceTests.swift in Sources */,
+				99A9CD7E2AF989D000B725A5 /* MealDetailModelTests.swift in Sources */,
+				99A9CD832AF9950200B725A5 /* MealServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,13 +311,8 @@
 /* Begin PBXTargetDependency section */
 		99A9CD582AF9797300B725A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 99A9CD452AF9797200B725A5 /* Fetch Take Home */;
+			target = 99A9CD452AF9797200B725A5 /* Desserts Take Home */;
 			targetProxy = 99A9CD572AF9797300B725A5 /* PBXContainerItemProxy */;
-		};
-		99A9CD622AF9797300B725A5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 99A9CD452AF9797200B725A5 /* Fetch Take Home */;
-			targetProxy = 99A9CD612AF9797300B725A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -421,9 +443,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Fetch Take Home/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Desserts Take Home/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Take Home";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,7 +457,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fetch.com.Fetch-Take-Home";
+				PRODUCT_BUNDLE_IDENTIFIER = "desserts.com.Desserts-Take-Home";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -449,9 +472,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Fetch Take Home/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Desserts Take Home/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Take Home";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,7 +486,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fetch.com.Fetch-Take-Home";
+				PRODUCT_BUNDLE_IDENTIFIER = "desserts.com.Desserts-Take-Home";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -480,12 +504,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fetch.com.Fetch-Take-HomeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "desserts.com.Desserts-Take-HomeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fetch Take Home.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fetch Take Home";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desserts Take Home.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Desserts Take Home";
 			};
 			name = Debug;
 		};
@@ -499,53 +523,19 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fetch.com.Fetch-Take-HomeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "desserts.com.Desserts-Take-HomeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fetch Take Home.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fetch Take Home";
-			};
-			name = Release;
-		};
-		99A9CD712AF9797300B725A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fetch.com.Fetch-Take-HomeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Fetch Take Home";
-			};
-			name = Debug;
-		};
-		99A9CD722AF9797300B725A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fetch.com.Fetch-Take-HomeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Fetch Take Home";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desserts Take Home.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Desserts Take Home";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		99A9CD412AF9797200B725A5 /* Build configuration list for PBXProject "Fetch Take Home" */ = {
+		99A9CD412AF9797200B725A5 /* Build configuration list for PBXProject "Desserts Take Home" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				99A9CD682AF9797300B725A5 /* Debug */,
@@ -554,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99A9CD6A2AF9797300B725A5 /* Build configuration list for PBXNativeTarget "Fetch Take Home" */ = {
+		99A9CD6A2AF9797300B725A5 /* Build configuration list for PBXNativeTarget "Desserts Take Home" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				99A9CD6B2AF9797300B725A5 /* Debug */,
@@ -563,20 +553,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99A9CD6D2AF9797300B725A5 /* Build configuration list for PBXNativeTarget "Fetch Take HomeTests" */ = {
+		99A9CD6D2AF9797300B725A5 /* Build configuration list for PBXNativeTarget "Desserts Take HomeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				99A9CD6E2AF9797300B725A5 /* Debug */,
 				99A9CD6F2AF9797300B725A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		99A9CD702AF9797300B725A5 /* Build configuration list for PBXNativeTarget "Fetch Take HomeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99A9CD712AF9797300B725A5 /* Debug */,
-				99A9CD722AF9797300B725A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
