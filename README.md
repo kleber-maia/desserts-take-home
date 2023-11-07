@@ -12,7 +12,9 @@ I chose MVVM for the application's view tier, also caring about single-responsib
 - I wanted to showcase the kind of work I'm used to do;
 - I believe these are current industry standards / best practices widely adopted.
 
-For consuming `The Meal DB` REST API, I've created `MealService` and `MealDetailService`. Each one creates their corresponding GET HTTP request, deal with possible failure scenarios and return their correspondent decoded models upon success. 
+For consuming `The Meal DB` REST API, I've created `MealService` and `MealDetailService` types. Each one creates their corresponding GET HTTP request, deals with possible failure scenarios and return their correspondent decoded models upon success. 
+
+`MealListView` / `MealListViewModel` are responsible for fetching and displaying the list of available desserts. When the user taps on a dessert, `MealDetailView` / `MealDetailViewModel` will fetch and display ingredients and preparation instructions.
 
 ### 3rd party libraries
 I haven't used any third party library for this project.
