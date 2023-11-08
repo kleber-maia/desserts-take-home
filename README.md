@@ -1,10 +1,6 @@
 # Desserts App / Take Home
 
-
-
-https://github.com/kleber-maia/desserts-take-home/assets/10270929/42bba351-c175-41d5-bb3f-1529a4af043f
-
-
+https://github.com/kleber-maia/desserts-take-home/assets/10270929/5928c0fc-0c1c-4877-b472-913013f55e96
 
 ### The architectural design
 I chose MVVM for the application's view tier, also caring about single-responsibility and dependency injection principles for everything else. The reasons behind those choices were:
