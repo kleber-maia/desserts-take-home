@@ -46,7 +46,7 @@ final class MealListViewModel: ObservableObject {
             do {
                 allMeals = try await service.fetch(category: "Dessert")
                 meals = allMeals
-            } catch let error as Errors {
+            } catch let error as InternalError {
                 errorMessage = error.localizedDescription
             } catch {
                 errorMessage = error.localizedDescription

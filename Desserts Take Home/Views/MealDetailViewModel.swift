@@ -32,7 +32,7 @@ final class MealDetailViewModel: ObservableObject {
         Task {
             do {
                 meal = try await service.fetch(id: id)
-            } catch let error as Errors {
+            } catch let error as InternalError {
                 errorMessage = error.localizedDescription
             } catch {
                 errorMessage = error.localizedDescription

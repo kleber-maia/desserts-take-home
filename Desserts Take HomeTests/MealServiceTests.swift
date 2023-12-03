@@ -40,7 +40,7 @@ final class MealServiceTests: XCTestCase {
         do {
             // Act
             _ = try await service.fetch(category: "category")
-        } catch Errors.invalidResponse {
+        } catch InternalError.invalidResponse {
             // expected outcome
         } catch {
             // invalid outcome

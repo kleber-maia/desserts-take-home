@@ -1,5 +1,5 @@
 //
-//  Errors.swift
+//  InternalError.swift
 //  Desserts Take Home
 //
 //  Created by Kleber Maia on 11/6/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Errors: Error {
+enum InternalError: Error {
     case invalidResponse
 
     var localizedDescription: String {

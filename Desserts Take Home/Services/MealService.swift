@@ -34,7 +34,7 @@ final class MealService: MealServicing {
             (200..<300).contains(httpResponse.statusCode),
             !data.isEmpty
         else {
-            throw Errors.invalidResponse
+            throw InternalError.invalidResponse
         }
 
         return try MealModel.decode(from: data)
