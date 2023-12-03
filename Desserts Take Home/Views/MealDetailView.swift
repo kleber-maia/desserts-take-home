@@ -75,7 +75,7 @@ struct MealDetailView: View {
             }
         }
         .onAppear {
-            viewModel.bootstrap()
+            viewModel.fetchData()
         }
     }
 }

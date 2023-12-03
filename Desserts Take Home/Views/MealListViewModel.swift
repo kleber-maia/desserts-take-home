@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 /// `MealListView`'s `ViewModel` companion.
-@MainActor
 final class MealListViewModel: ObservableObject {
     @Published private(set) var errorMessage: String?
     @Published private(set) var loading = false
@@ -31,18 +30,14 @@ final class MealListViewModel: ObservableObject {
         self.service = service
     }
 
-    func bootstrap() {
-        refresh()
-    }
-
-    func refresh() {
+    func fetchData() {
         guard !loading else { return }
 
         errorMessage = nil
 
         loading = true
 
-        Task {
+        Task { @MainActor in
             do {
                 allMeals = try await service.fetch(category: "Dessert")
                 meals = allMeals

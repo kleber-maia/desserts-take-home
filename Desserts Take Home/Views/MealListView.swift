@@ -25,7 +25,7 @@ struct MealListView: View {
                 .listStyle(.plain)
                 .searchable(text: $viewModel.searchText)
                 .refreshable {
-                    viewModel.refresh()
+                    viewModel.fetchData()
                 }
                 .navigationTitle(NSLocalizedString("meals_list_title", value: "Desserts", comment: "Screen title"))
                 .navigationDestination(for: MealModel.self, destination: { meal in
@@ -44,7 +44,7 @@ struct MealListView: View {
         }
         .tint(.primary)
         .onAppear {
-            viewModel.bootstrap()
+            viewModel.fetchData()
         }
     }
 }

@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@MainActor
 /// `MealDetailView`'s `ViewModel` companion.
 final class MealDetailViewModel: ObservableObject {
     @Published private(set) var errorMessage: String?
@@ -22,14 +21,14 @@ final class MealDetailViewModel: ObservableObject {
         self.service = service
     }
 
-    func bootstrap() {
+    func fetchData() {
         guard !loading else { return }
 
         errorMessage = nil
 
         loading = true
 
-        Task {
+        Task { @MainActor in
             do {
                 meal = try await service.fetch(id: id)
             } catch let error as InternalError {
