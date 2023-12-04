@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		92D4275F2B1D7B34009180A0 /* XCTestCase+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D4275E2B1D7B34009180A0 /* XCTestCase+Ext.swift */; };
+		92D427622B1E1099009180A0 /* MealListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D427612B1E1099009180A0 /* MealListViewModelTests.swift */; };
+		92D427642B1E1143009180A0 /* MockMealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D427632B1E1143009180A0 /* MockMealService.swift */; };
 		92FEBB412B1D4C0500E5D389 /* MealDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FEBB402B1D4C0500E5D389 /* MealDetailViewModelTests.swift */; };
 		92FEBB432B1D4D0000E5D389 /* MockURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FEBB422B1D4D0000E5D389 /* MockURLSessionProtocol.swift */; };
 		92FEBB462B1D4EBF00E5D389 /* MockMealDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FEBB452B1D4EBF00E5D389 /* MockMealDetailService.swift */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		92D4275E2B1D7B34009180A0 /* XCTestCase+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Ext.swift"; sourceTree = "<group>"; };
+		92D427612B1E1099009180A0 /* MealListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealListViewModelTests.swift; sourceTree = "<group>"; };
+		92D427632B1E1143009180A0 /* MockMealService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMealService.swift; sourceTree = "<group>"; };
 		92FEBB402B1D4C0500E5D389 /* MealDetailViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailViewModelTests.swift; sourceTree = "<group>"; };
 		92FEBB422B1D4D0000E5D389 /* MockURLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessionProtocol.swift; sourceTree = "<group>"; };
 		92FEBB452B1D4EBF00E5D389 /* MockMealDetailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMealDetailService.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				92FEBB452B1D4EBF00E5D389 /* MockMealDetailService.swift */,
+				92D427632B1E1143009180A0 /* MockMealService.swift */,
 				92FEBB422B1D4D0000E5D389 /* MockURLSessionProtocol.swift */,
 			);
 			path = Mocks;
@@ -156,6 +161,7 @@
 				99A9CD762AF97E3E00B725A5 /* Fixtures */,
 				92FEBB442B1D4D0400E5D389 /* Mocks */,
 				92FEBB402B1D4C0500E5D389 /* MealDetailViewModelTests.swift */,
+				92D427612B1E1099009180A0 /* MealListViewModelTests.swift */,
 				99A9CD5A2AF9797300B725A5 /* MealModelTests.swift */,
 				99A9CD7D2AF989D000B725A5 /* MealDetailModelTests.swift */,
 				99A9CD822AF9950200B725A5 /* MealServiceTests.swift */,
@@ -327,8 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D427642B1E1143009180A0 /* MockMealService.swift in Sources */,
 				99A9CD5B2AF9797300B725A5 /* MealModelTests.swift in Sources */,
 				92FEBB462B1D4EBF00E5D389 /* MockMealDetailService.swift in Sources */,
+				92D427622B1E1099009180A0 /* MealListViewModelTests.swift in Sources */,
 				92D4275F2B1D7B34009180A0 /* XCTestCase+Ext.swift in Sources */,
 				92FEBB412B1D4C0500E5D389 /* MealDetailViewModelTests.swift in Sources */,
 				92FEBB432B1D4D0000E5D389 /* MockURLSessionProtocol.swift in Sources */,
