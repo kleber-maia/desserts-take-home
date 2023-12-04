@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92D4275F2B1D7B34009180A0 /* XCTestCase+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D4275E2B1D7B34009180A0 /* XCTestCase+Ext.swift */; };
+		92FEBB412B1D4C0500E5D389 /* MealDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FEBB402B1D4C0500E5D389 /* MealDetailViewModelTests.swift */; };
+		92FEBB432B1D4D0000E5D389 /* MockURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FEBB422B1D4D0000E5D389 /* MockURLSessionProtocol.swift */; };
+		92FEBB462B1D4EBF00E5D389 /* MockMealDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FEBB452B1D4EBF00E5D389 /* MockMealDetailService.swift */; };
 		992E1C152AFA780E009377BB /* MealListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E1C142AFA780E009377BB /* MealListItemView.swift */; };
 		992E1C172AFA86D7009377BB /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E1C162AFA86D7009377BB /* MealDetailView.swift */; };
 		992E1C192AFA9FB6009377BB /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E1C182AFA9FB6009377BB /* MealDetailViewModel.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92D4275E2B1D7B34009180A0 /* XCTestCase+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Ext.swift"; sourceTree = "<group>"; };
+		92FEBB402B1D4C0500E5D389 /* MealDetailViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailViewModelTests.swift; sourceTree = "<group>"; };
+		92FEBB422B1D4D0000E5D389 /* MockURLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessionProtocol.swift; sourceTree = "<group>"; };
+		92FEBB452B1D4EBF00E5D389 /* MockMealDetailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMealDetailService.swift; sourceTree = "<group>"; };
 		992E1C142AFA780E009377BB /* MealListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealListItemView.swift; sourceTree = "<group>"; };
 		992E1C162AFA86D7009377BB /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
 		992E1C182AFA9FB6009377BB /* MealDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
@@ -84,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92D427602B1D7B6D009180A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92D4275E2B1D7B34009180A0 /* XCTestCase+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		92FEBB442B1D4D0400E5D389 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				92FEBB452B1D4EBF00E5D389 /* MockMealDetailService.swift */,
+				92FEBB422B1D4D0000E5D389 /* MockURLSessionProtocol.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		99A9CD3D2AF9797200B725A5 = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +152,10 @@
 		99A9CD592AF9797300B725A5 /* Desserts Take HomeTests */ = {
 			isa = PBXGroup;
 			children = (
+				92D427602B1D7B6D009180A0 /* Extensions */,
 				99A9CD762AF97E3E00B725A5 /* Fixtures */,
+				92FEBB442B1D4D0400E5D389 /* Mocks */,
+				92FEBB402B1D4C0500E5D389 /* MealDetailViewModelTests.swift */,
 				99A9CD5A2AF9797300B725A5 /* MealModelTests.swift */,
 				99A9CD7D2AF989D000B725A5 /* MealDetailModelTests.swift */,
 				99A9CD822AF9950200B725A5 /* MealServiceTests.swift */,
@@ -300,6 +328,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				99A9CD5B2AF9797300B725A5 /* MealModelTests.swift in Sources */,
+				92FEBB462B1D4EBF00E5D389 /* MockMealDetailService.swift in Sources */,
+				92D4275F2B1D7B34009180A0 /* XCTestCase+Ext.swift in Sources */,
+				92FEBB412B1D4C0500E5D389 /* MealDetailViewModelTests.swift in Sources */,
+				92FEBB432B1D4D0000E5D389 /* MockURLSessionProtocol.swift in Sources */,
 				99A9CD892AF9A18300B725A5 /* MealDetailServiceTests.swift in Sources */,
 				99A9CD7E2AF989D000B725A5 /* MealDetailModelTests.swift in Sources */,
 				99A9CD832AF9950200B725A5 /* MealServiceTests.swift in Sources */,

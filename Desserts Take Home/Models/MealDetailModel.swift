@@ -8,7 +8,7 @@
 import Foundation
 
 /// Represents a `MealDetail` on the database.
-struct MealDetailModel: Decodable {
+struct MealDetailModel: Decodable, Equatable {
     private struct MealDetailResult: Decodable {
         let meals: [MealDetailModel]
     }
