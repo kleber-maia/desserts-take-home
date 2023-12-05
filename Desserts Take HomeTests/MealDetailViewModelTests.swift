@@ -26,7 +26,7 @@ final class MealDetailViewModelTests: XCTestCase {
 
     func testFetchData_whenItSucceeds() {
         // Arrange
-        let mock = MockMealDetailService(result: detailModel)
+        let mock = MockMealDetailService(outputModel: detailModel)
 
         let viewModel = MealDetailViewModel(id: "dummy", service: mock)
 
@@ -41,14 +41,14 @@ final class MealDetailViewModelTests: XCTestCase {
 
         // Assert
         XCTAssert(viewModel.loading == false)
-        XCTAssert(mock.fetchId == "dummy")
+        XCTAssert(mock.inputId == "dummy")
         XCTAssert(viewModel.errorMessage == nil)
         XCTAssert(viewModel.meal == detailModel)
     }
 
     func testFetchData_whenItFails() {
         // Arrange
-        let mock = MockMealDetailService(error: NSError(domain: "domain", code: 1001, userInfo: [NSLocalizedFailureErrorKey: "some error message"]))
+        let mock = MockMealDetailService(outputError: NSError(domain: "domain", code: 1001, userInfo: [NSLocalizedFailureErrorKey: "some error message"]))
 
         let viewModel = MealDetailViewModel(id: "dummy", service: mock)
 

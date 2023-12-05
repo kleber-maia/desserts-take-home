@@ -9,23 +9,23 @@ import XCTest
 @testable import Desserts_Take_Home
 
 class MockMealDetailService: MealDetailServicing {
-    private(set) var fetchId: String?
+    private(set) var inputId: String?
 
-    private var result: MealDetailModel?
-    private var error: Error?
+    private var outputModel: MealDetailModel?
+    private var outputError: Error?
 
-    init(result: MealDetailModel? = nil, error: Error? = nil) {
-        self.result = result
-        self.error = error
+    init(outputModel: MealDetailModel? = nil, outputError: Error? = nil) {
+        self.outputModel = outputModel
+        self.outputError = outputError
     }
 
     func fetch(id: String) async throws -> MealDetailModel? {
-        fetchId = id
+        inputId = id
 
-        if let error {
-            throw error
+        if let outputError {
+            throw outputError
         }
 
-        return result
+        return outputModel
     }
 }

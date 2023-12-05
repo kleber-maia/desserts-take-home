@@ -19,7 +19,7 @@ final class MealServiceTests: XCTestCase {
             return
         }
 
-        let mockSession = MockURLSessionProtocol(data: jsonData, statusCode: 200)
+        let mockSession = MockURLSessionProtocol(outputData: jsonData, outputStatusCode: 200)
 
         let service = MealService(session: mockSession)
 
@@ -28,12 +28,12 @@ final class MealServiceTests: XCTestCase {
 
         // Assert
         XCTAssertEqual(actual.count, 65)
-        XCTAssertEqual(mockSession.requestUrl?.absoluteString, "https://themealdb.com/api/json/v1/1/filter.php?c=category")
+        XCTAssertEqual(mockSession.inputUrl?.absoluteString, "https://themealdb.com/api/json/v1/1/filter.php?c=category")
     }
 
     func testDessertsCategory_whenResponseIsInvalid() async throws {
         // Arrange
-        let mockSession = MockURLSessionProtocol(data: Data(), statusCode: 500)
+        let mockSession = MockURLSessionProtocol(outputData: Data(), outputStatusCode: 500)
 
         let service = MealService(session: mockSession)
 

@@ -9,19 +9,19 @@ import XCTest
 @testable import Desserts_Take_Home
 
 class MockURLSessionProtocol: URLSessionProtocol {
-    var requestUrl: URL?
+    private(set) var inputUrl: URL?
 
-    private var data: Data
-    private var statusCode: Int
+    private var outputData: Data
+    private var outputStatusCode: Int
 
-    init(data: Data, statusCode: Int) {
-        self.data = data
-        self.statusCode = statusCode
+    init(outputData: Data, outputStatusCode: Int) {
+        self.outputData = outputData
+        self.outputStatusCode = outputStatusCode
     }
 
     func data(from url: URL, delegate: (URLSessionTaskDelegate)?) async throws -> (Data, URLResponse) {
-        requestUrl = url
+        inputUrl = url
 
-        return (data, HTTPURLResponse(url: url, statusCode: statusCode, httpVersion: nil, headerFields: nil)!)
+        return (outputData, HTTPURLResponse(url: url, statusCode: outputStatusCode, httpVersion: nil, headerFields: nil)!)
     }
 }
